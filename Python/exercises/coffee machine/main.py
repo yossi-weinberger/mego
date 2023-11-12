@@ -99,6 +99,7 @@ def make_coffee():
 
     # insert profit and ingredients value
     money["profit"] += coffee_price
+    money["change"] -= change
     ingredients["water"] -= menu[coffee_type]["ingredients"]["water"]
     ingredients["coffee"] -= menu[coffee_type]["ingredients"]["coffee"]
     ingredients["milk"] -= menu[coffee_type]["ingredients"]["milk"]
@@ -117,7 +118,7 @@ def technician_mode():
             technician_mode()
         elif select_report == 2:
             for money_report, amount in money.items():
-                print(f"{money_report} : {amount}")
+                print(f"{money_report} : {amount}$")
             technician_mode()
         elif select_report == 3:
             ingredients["water"] += int(input("Type the amount of water to add: "))
