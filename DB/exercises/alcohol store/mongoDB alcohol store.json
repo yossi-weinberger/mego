@@ -1,0 +1,70 @@
+{
+    'ID': '0000',
+    'category': 'Spirits',
+    'name': 'Ginger Whiskey',
+    'brand': 'Jack Daniels',
+    'price': 75
+},
+{
+    'ID': '0001',
+    'category': 'Liqueurs',
+    'name': 'Forest Fruit Vodka',
+    'brand': 'Absolut',
+    'price': 41
+},
+{
+    'ID': '0002',
+    'category': 'Wines',
+    'name': 'Caramel Rum',
+    'brand': 'Bacardi',
+    'price': 20
+},
+{
+    'ID': '0003',
+    'category': 'Beers',
+    'name': 'Spicy Tequila',
+    'brand': 'Patron',
+    'price': 90
+},
+{
+    'ID': '0004',
+    'category': 'Ciders',
+    'name': 'Citrus Gin',
+    'brand': 'Beefeater Gin',
+    'price': 72
+},
+{
+    'ID': '0005',
+    'category': 'Meads',
+    'name': 'Dark Beer',
+    'brand': 'Heineken',
+    'price': 56
+},
+{
+    'ID': '0006',
+    'category': 'Sakes',
+    'name': 'Sweet Wine',
+    'brand': 'Merlot',
+    'price': 74
+},
+{
+    'ID': '0007',
+    'category': 'Sojus',
+    'name': 'Fruity Champagne',
+    'brand': 'Moet',
+    'price': 66
+},
+{
+    'ID': '0008',
+    'category': 'Vermouths',
+    'name': 'Tropical Sangria',
+    'brand': 'Real Sangria',
+    'price': 60
+},
+{
+    'ID': '0009',
+    'category': 'Aperitifs',
+    'name': 'Bitter Martini',
+    'brand': 'Martini Rosso',
+    'price': 72
+},
