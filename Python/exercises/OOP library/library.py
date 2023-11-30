@@ -1,22 +1,25 @@
 from DB import books
-from book import Book
-
 
 class Library:
     def __init__(self):
         pass
 
     def book_borrow():
-        self.id = int(input("Type the id of the book: "))
-        if self.qty > 0:
-            print("You can take the book")
-            self.qty -= 1
-        else:
-            print("This book is not available")
+        book_for_borrow = int(input("Type the id of the book: "))
+        for i in books:
+            if i.book_id == book_for_borrow:
+                if i.qty > 0:
+                    print("You can take the book")
+                    i.qty -= 1
+                else:
+                    print("This book is not available")
 
     def book_return(self):
-        print("Thank you")
-        self.qty += 1
+        book_for_return = int(input("Type the id of the book: "))
+        for i in books:
+            if i.book_id == book_for_return:
+                print("Thank you")
+                i.qty += 1
 
     def print_all_books():
         for book in books:
