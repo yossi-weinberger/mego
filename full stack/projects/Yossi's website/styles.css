@@ -1,0 +1,127 @@
+/*---------------------box----------------------------*/
+@font-face {
+	font-family: 'My Font';
+	src: url(Fonts/RubikMoonrocks-Regular.ttf);
+  }
+@font-face{
+	font-family: 'My Font 2';
+	src: url(Fonts/SuezOne-Regular.ttf);
+}
+@font-face{
+	font-family: 'My Font 3';
+	src: url(Fonts/NotoSerifHebrew-VariableFont_wdth\,wght.ttf);
+}
+
+body{
+	background-color:#F2EE9D;
+	
+}
+
+.navigation{
+	background-color: #8C3333;
+}
+
+
+.box {
+	display: inline-block;
+	font-size: 25px;
+	width: 49%;
+	vertical-align: middle;
+}
+
+
+.content {
+	padding: 25px;
+}
+
+.content a{
+	color: azure;
+}
+
+.hadline{
+	position: relative;
+	text-align: center;
+	width: auto;
+}
+	  
+.hadline img {
+		width: 100%;
+		opacity: 0.9;
+}
+	  
+.hadline h1 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	font-size: 150px;
+	font-family:'My Font';
+	text-shadow: 8px 0 black, 0 8px black, 8px 0 black, 0 8px black;
+	
+}
+	  
+
+
+/*---------------------media----------------------------*/
+@media (max-width:700px)
+
+/*At less of 700px width*/
+	{
+	.box {
+		width: 100%
+			/*u_1_2 width is 100% instead of 50% */
+	}
+}
+
+/*---------------------button----------------------------*/
+button {
+	font-family: 'My Font 3';
+	font-size: 20px;
+	padding: 10px;
+	border: 2px solid;
+	margin-top: 20px;
+	background-color: #8C3333;
+	color: antiquewhite;
+	font-weight: bold;
+}
+
+/*---------------------image----------------------------*/
+img {
+	width: 100%;
+	border: 2px solid;
+}
+
+.MyFace {
+	width: 700px;
+	height: 500px ;
+	object-fit: cover;
+	border-radius: 15%;
+}
+
+.Jars {
+	width: 700px;
+	height: 500px ;
+	object-fit: cover;
+	border-radius: 10%;
+}
+
+a {
+	text-decoration: none;
+	font-size: 25px;
+}
+
+.p {
+	font-family: 'My Font 3';
+}
+
+/*---------------------global----------------------------*/
+* {
+	direction: rtl;
+	/*Set the line height for the element*/
+	line-height:120%;
+	/*The vertical-align property sets the vertical alignment of an element.*/
+	margin: 0;
+	word-spacing: 6px;
+	font-family: 'My Font 2';
+}
