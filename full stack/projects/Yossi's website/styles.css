@@ -2,7 +2,7 @@
 @font-face {
 	font-family: 'My Font';
 	src: url(Fonts/RubikMoonrocks-Regular.ttf);
-  }
+}
 @font-face{
 	font-family: 'My Font 2';
 	src: url(Fonts/SuezOne-Regular.ttf);
@@ -14,24 +14,47 @@
 
 body{
 	background-color:#F2EE9D;
-	
 }
 
 .navigation{
 	background-color: #8C3333;
 }
 
+.main_container {
+    display:flex;
+	justify-content: center;
+	flex-wrap: wrap;
+    justify-content: space-around;
 
-/* .box {
-	/* display: inline-block; */
+}
 
-	/* width: 49%; */
+.box_main {
+	display: inline-block;
+	width: 50%;
 	/* vertical-align: middle; */
-/* }  */
+	margin:auto;
+	/* font: size 50%; */
+ } 
 
+ p {
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    height:400px%; */
+    font-size: 25px;
+}
+
+  
+h4{
+	font-size: 35px;
+} 
 
 .content {
 	padding: 25px;
+	/* display: flex; */
+    /* align-items: center;
+    justify-content: center; */
+    /* height:200px%; */
 }
 
 .content a{
@@ -45,8 +68,8 @@ body{
 }
 	  
 .hadline img {
-		width: 100%;
-		opacity: 0.9;
+	width: 100%;
+	opacity: 0.9;
 }
 	  
 .hadline h1 {
@@ -58,31 +81,20 @@ body{
 	font-size: 150px;
 	font-family:'My Font';
 	text-shadow: 8px 0 black, 0 8px black, 8px 0 black, 0 8px black;
-	
 }
-	  
+
+@media only screen and (max-width: 600px) {
+	.hadline h1 {
+		font-size: 50px;
+	};
+}
+
 .index {
-	/* position: absolute; */
-	/* top: 50%;
-	left: 50%; */
-	/* transform: translate(-50%, -50%); */
 	color: white;
 	font-size: 15px;
 	font-family:'My Font';
 	text-shadow: 8px 0 black, 0 8px black, 8px 0 black, 0 8px black;
 }
-
-
-/*---------------------media----------------------------*/
-/* @media (max-width:700px) */
-
-/*At less of 700px width*/
-	
-	.box {
-		width: 100%
-			/*u_1_2 width is 100% instead of 50% */
-	}
-
 
 /*---------------------button----------------------------*/
 button {
@@ -97,10 +109,10 @@ button {
 }
 
 /*---------------------image----------------------------*/
-img {
+/* img {
 	width: 100%;
 	border: 2px solid;
-}
+} */
 
 .MyFace {
 	width: 700px;
@@ -134,14 +146,11 @@ a {
 /*---------------------global----------------------------*/
 * {
 	direction: rtl;
-	/*Set the line height for the element*/
 	line-height:120%;
-	/*The vertical-align property sets the vertical alignment of an element.*/
 	margin: 0;
 	word-spacing: 6px;
 	font-family: 'My Font 2';
 }
-
 
 /* store */
 .container {
@@ -149,26 +158,139 @@ a {
     margin-right: 10%;
     margin-left: 10%;
     display:flex;
-	justify-content: center;
+	justify-content:right;
 	flex-wrap: wrap;
     justify-content: space-around;
-
 }
 
-  
 .box {
 	border: 3px solid #8C3333;
-	/* border-radius: 10%; */
 	width: 200px;
 	margin: 40px;
 	text-align: center;
 	padding: 15px;
 	font-size: 25px;
-  }
+}
   
-  .box img {
+.box img {
 	width: 100%;
 	height: auto;
-	/* border-radius: 10%; */
+}
+
+/*---------------------media----------------------------*/
+@media only screen and (max-width: 600px) {
+	.box_main {
+		width: 100%;
+	}
+	.box {
+		width: 100%;
+	}
+	.container {
+		width: 100%;
+		margin-right: 0;
+		margin-left: 0;
+	}
+	.MyFace, .Jars {
+		width: 100%;
+		height: auto;
+	}
+	.test {
+		max-width: 100%;
+	}
+
+}
+
+	/* product css */
+
+	.product-page .product {
+		/* width: 50%; */
+		/* margin: auto; */
+		/* padding: 20px; */
+		/* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+		/* transition: 0.3s; */
+		/* border-radius: 5px; */
+	}
 	
-  } 
+	
+	.product-page h2, .product-page h3 {
+		/* סגנונות שלך כאן */
+	}
+	
+	.product-page p {
+		/* סגנונות שלך כאן */
+	}
+	
+	/* .product-page img {
+		width:20px;
+		height: 20px;
+	} */
+
+	
+	
+
+	.product {
+		width: 60%;
+		margin: auto;
+		padding: 20px;
+		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+		transition: 0.3s;
+		border-radius: 5px;
+		
+	}
+	
+	.product img {
+		width: 50%;
+	
+		height: auto;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	
+	.product h2, .product h3 {
+		text-align: center;
+		color: #333;
+	}
+	
+	.product p {
+		text-align: justify;
+		color: #666;
+	}
+	
+	button {
+		display:block;
+
+		width: 200px;
+		height: 50px;
+		margin: 20px auto;
+		background-color: #8C3333;
+		color: white;
+		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+		font-size: 18px;
+	}
+
+	
+	
+	button:hover {
+		background-color: #45a049;
+	}
+	
+
+
+
+
+	.recipe-image {
+		width: 60%;
+		height: auto;
+	  }
+	  
+	  .ingredients, .instructions {
+		margin: 20px 0;
+	  }
+	  
+	  h2 {
+		color: #D2691E;
+	  }
