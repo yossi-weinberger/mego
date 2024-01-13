@@ -1,11 +1,6 @@
 #myCanvas {
-    /* position:absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%); */
-    width: 700px;
-    height: 700px;
-    /* background-color: #f3f3f3; */
+    width: 500px;
+    height: 500px;
 }
 
 .game_name {
@@ -18,22 +13,42 @@
     justify-content: center;
 }
 
-/* .center {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    
-  } */
 
 .center {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
     position: absolute;
-    top: 50%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
     max-width: 100%;
     max-height: 100%;
 }
-    
+
+#score {
+    font-size: 40px;
+    font-weight: bold;
+    color: #51ff00;
+    text-shadow: 2px 2px #000000;
+  }
+
+  #lives {
+    font-size: 40px;
+    font-weight: bold;
+    color: #ff0000;
+    text-shadow: 2px 2px #000000;
+  }
   
-  
+  .info {
+    border: 2px solid rgb(255, 255, 255); 
+    font-size: 30px;
+    color: aliceblue;
+    border-radius: 10px;
+    padding: 20px;
+  }
+
+  body {
+    background-image:url("pics/wallpaperflare.com_wallpaper5.jpg");
+    background-size:120%;
+  }
