@@ -1,11 +1,13 @@
-#myCanvas {
+
+
+/* #myCanvas {
     width: 500px;
     height: 500px;
-}
+} */
 
 .game_name {
     /* object-position: center; */
-    width: 50%;
+    width: 40%;
     height: 50%;
     display: flex;
     flex-direction: column;
@@ -27,16 +29,16 @@
 }
 
 #score {
-    font-size: 40px;
-    font-weight: bold;
     color: #51ff00;
-    text-shadow: 2px 2px #000000;
   }
 
   #lives {
+    color: #ff0000;
+  }
+
+  #lives ,#score{
     font-size: 40px;
     font-weight: bold;
-    color: #ff0000;
     text-shadow: 2px 2px #000000;
   }
   
@@ -44,6 +46,7 @@
     border: 2px solid rgb(255, 255, 255); 
     font-size: 30px;
     color: aliceblue;
+    text-shadow: 2px 2px #000000;
     border-radius: 10px;
     padding: 20px;
   }
